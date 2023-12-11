@@ -1,38 +1,84 @@
 *{
     margin: 0;
 }
+li:hover{
+    background-color: rgba(151, 150, 150, 0.4);
+    border-radius: 6px 6px 6px 6px;
+}
 body{
     background-image: url('./Front/Images/Steppe montagneuse.avif');
     background-repeat: repeat;
     background-size:cover;
 }
+h1{
+    display: none;
+}
 
+
+/* Menu de navigation (entete) */
 #headBand {
     height: 65px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(192,192,192, 0.3)
+    background-color: rgb(192,192,192, 0.4)
 }
 #logo{
-    margin: 60px 15px 15px 15px;
+    margin: 60px 20px 18px 15px;
     width: 8vw;
 }
 #navBar{
     margin: auto 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 #navlink{
+    padding-left: 0;
+}
+#navlink a{
+    color: white;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    margin: 8px 15px 8px 15px;
+}
+.nav{
+    text-decoration: none;
+}
+.link{
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
-#navlink a{
-    color: white;
+
+/* Icones linkedin et github */
+#navPlatforms{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    position: relative;
 }
-.nav{
-    text-decoration: none;
-    margin-right: 30px;
+.fa-brands{
+    margin:9px;
 }
-.nav:hover{
-    color: black
+.custumSize1{
+    font-size: 1.5em;
+}
+#circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    right: 50px;
+    top: 9px;
+}
+.fa-linkedin-in{
+    color: rgba(192, 192, 192, 0.944);
+    z-index: 1;
+    position: absolute;
+    top: 6px;
+    right: 47px;
 }
