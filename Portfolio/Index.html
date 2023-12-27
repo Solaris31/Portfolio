@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./Front/Favicon/Favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd7f06eaf5.js" crossorigin="anonymous"></script>
-    <title>Portfolio</title>
+    <title>Portfolio José Garcia</title>
 </head>
 <body>
+
+    <!-- Image de fond -->
+    <div class="image"></div>
+
+    <!-- Menu de navigation -->
     <header id="headBand">
         <img id="logo" src="./Front/Images/Logo.png" alt="Signature du createur du site">
         <nav id="navBar">
             <ul id="navlink" class="link">
-                <li><a href="#anchor1" class="nav">A propos</a></li>
+                <li id="test"><a href="#anchor1" class="nav">A propos</a></li>
                 <li><a href="#anchor2" class="nav">Mes services</a></li>
                 <li><a href="#anchor3" class="nav">Mes réalisations</a></li>
                 <li><a href="#anchor4" class="nav">Contact</a></li>
@@ -26,26 +32,26 @@
             </div>
             </ul>
         </nav>
-    </header>    
-    
-    <div id="bande1"></div>
-    <div id="bande2"></div>
+    </header>
 
+    <!-- Symbole ascenseur montant -->
+    <i class="fa-solid fa-up"></i>
+
+    <!-- Section A PROPOS -->
     <section>
         <div class="anchor" id="anchor1"></div>
         <h1>Portfolio</h1>
-        <h2>A propos</h2>
         <p id="about">Bonjour, je suis José Garcia <span>développeur web</span></p>
     </section>
     
-    
+    <!-- Section MES SERVICES -->
     <section>
         <div class="anchor" id="anchor2"></div>
         <h2>Mes services</h2>
         <p id="services">Bonjour, je suis José Garcia <span>développeur web</span></p>
     </section>
 
-
+    <!-- Section MES REALISATIONS -->
     <section>
         <div class="anchor" id="anchor3"></div>
         <h2>Mes réalisations</h2>
@@ -53,10 +59,11 @@
     </section>
 
     
+    <!-- Section CONTACT -->
     <section>
         <div class="anchor" id="anchor4"></div>
         <h2>Contact</h2>
-        <form action="submit" method="post"></form>
+        <form action="Index.html" method="post"></form>
             <div id="PersonalInfos">
                 <div class="subGroup">
                     <legend></legend>
@@ -82,8 +89,12 @@
                 <input type="reset" class="button">
             </div>
     </section>
+
+    <!-- Pub de moi -->
     <footer>
-        <div class="bandeauFooter"></div>
+        <div id="bandeauFooter">
+            <p id="pub">Réalisation : José Garcia</p>
+        </div>
     </footer>
 </body>
 </html>
