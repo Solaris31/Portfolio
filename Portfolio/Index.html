@@ -12,16 +12,24 @@
     <title>Portfolio José Garcia</title>
 </head>
 <body>
+    <!-- Ancres de navigation -->
+    <div class="anchor" id="anchor1"></div>
+    <div class="anchor" id="anchor2"></div>
+    <div class="anchor" id="anchor3"></div>
+    <div class="anchor" id="anchor4"></div>
 
-    <!-- Image de fond -->
-    <div class="image"></div>
-
+    <!-- Images de fond -->
+    <div class="image" id="image1"></div>
+    <div class="image" id="image2"></div>
+    <div class="image" id="image3"></div>
+    <div class="image" id="image4"></div>
+    
     <!-- Menu de navigation -->
     <header id="headBand">
         <img id="logo" src="./Front/Images/Logo.png" alt="Signature du createur du site">
         <nav id="navBar">
             <ul id="navlink" class="link">
-                <li id="test"><a href="#anchor1" class="nav">A propos</a></li>
+                <li><a href="#anchor1" class="nav">A propos</a></li>
                 <li><a href="#anchor2" class="nav">Mes services</a></li>
                 <li><a href="#anchor3" class="nav">Mes réalisations</a></li>
                 <li><a href="#anchor4" class="nav">Contact</a></li>
@@ -38,62 +46,70 @@
     <i class="fa-solid fa-up"></i>
 
     <!-- Section A PROPOS -->
-    <section>
-        <div class="anchor" id="anchor1"></div>
-        <h1>Portfolio</h1>
-        <p id="about">Bonjour, je suis José Garcia <span>développeur web</span></p>
-    </section>
-    
-    <!-- Section MES SERVICES -->
-    <section>
-        <div class="anchor" id="anchor2"></div>
-        <h2>Mes services</h2>
-        <p id="services">Bonjour, je suis José Garcia <span>développeur web</span></p>
-    </section>
 
-    <!-- Section MES REALISATIONS -->
-    <section>
-        <div class="anchor" id="anchor3"></div>
-        <h2>Mes réalisations</h2>
-        <p id="realisations">Bonjour, je suis José Garcia <span>développeur web</span></p>
-    </section>
+    <main>
+        <section id="about-sec1">
+            <article id="about-art1">
+                <h1>Portfolio</h1>
+                <p id="about">Bonjour, je suis José Garcia <span>développeur web</span></p>
+            </article>
+        </section>
+        
+        <!-- Section MES SERVICES -->
+        <section id="services-sec2">
+            <article>
+                <h2>Mes services</h2>
+                <p id="services">Bonjour, je suis José Garcia <span>développeur web</span></p>
+            </article>
+        </section>
 
-    
-    <!-- Section CONTACT -->
-    <section>
-        <div class="anchor" id="anchor4"></div>
-        <h2>Contact</h2>
-        <form action="Index.html" method="post"></form>
-            <div id="PersonalInfos">
-                <div class="subGroup">
-                    <legend></legend>
-                    <label for="name">Nom</label>
-                    <input type="text" id="name" maxlength="20">
-                    <label for="firstName">Prénom</label>
-                    <input type="text" id="firstName" maxlength="20">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" maxlength="35">
-                </div>
-            </div>
-            <fieldset id="subject" class="subGroup">
-                <legend class="subGroup"></legend>
-                <div>
-                    <label for="titleSubject" id="titleSubject">Titre</label>
-                    <input type="text" id="titleSubject">
-                </div>
-                <label for="textSubject"></label>
-                <textarea name="message" id="textSubject" cols="20" rows="7" placeholder="Votre message..."></textarea>
-            </fieldset>
-            <div id="buttons">
-                <input type="submit" class="button">
-                <input type="reset" class="button">
-            </div>
-    </section>
+        <!-- Section MES REALISATIONS -->
+        <section>
+            <article id="realazations-sec3">
+                <h2>Mes réalisations</h2>
+                <p id="realisations">Bonjour, je suis José Garcia <span>développeur web</span></p>
+            </article>
+        </section>
+
+        
+        <!-- Section CONTACT -->
+        <section>
+            <article  id="contact-sec4">
+                <h2>Contact</h2>
+                <form action="index.html" method="post">
+                    <div id="PersonalInfos">
+                        <div class="subGroup">
+                            <legend></legend>
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" maxlength="20">
+                            <label for="firstName">Prénom</label>
+                            <input type="text" id="firstName" maxlength="20">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" maxlength="35">
+                        </div>
+                    </div>
+                    <fieldset id="subject" class="subGroup">
+                        <legend class="subGroup"></legend>
+                        <div>
+                            <label for="titleSubject" id="titleSubject">Titre</label>
+                            <input type="text" id="titleSubject">
+                        </div>
+                        <label for="textSubject"></label>
+                        <textarea name="message" id="textSubject" cols="20" rows="7" placeholder="Votre message..."></textarea>
+                    </fieldset>
+                    <div id="buttons">
+                        <input type="submit" class="button">
+                        <input type="reset" class="button">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
 
     <!-- Pub de moi -->
     <footer>
-        <div id="bandeauFooter">
-            <p id="pub">Réalisation : José Garcia</p>
+        <div>
+            <p id="pub">Réalisation : Garcia José</p>
         </div>
     </footer>
 </body>
