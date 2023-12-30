@@ -51,21 +51,22 @@
         <section id="about-sec1">
             <article id="about-art1">
                 <h1>Portfolio</h1>
+                <!-- <h2>A propos</h2> -->
                 <p id="about">Bonjour, je suis José Garcia <span>développeur web</span></p>
             </article>
         </section>
         
         <!-- Section MES SERVICES -->
         <section id="services-sec2">
-            <article>
-                <h2>Mes services</h2>
+            <article id="services-art2">
+                <!-- <h2>Mes services</h2> -->
                 <p id="services">Bonjour, je suis José Garcia <span>développeur web</span></p>
             </article>
         </section>
 
         <!-- Section MES REALISATIONS -->
-        <section>
-            <article id="realazations-sec3">
+        <section id="realizations-sec3">
+            <article id="realazations-art3">
                 <h2>Mes réalisations</h2>
                 <p id="realisations">Bonjour, je suis José Garcia <span>développeur web</span></p>
             </article>
@@ -73,21 +74,25 @@
 
         
         <!-- Section CONTACT -->
-        <section>
-            <article  id="contact-sec4">
+        <section id="contact-sec4">
+            <article  id="contact-art4">
                 <h2>Contact</h2>
-                <form action="index.html" method="post">
-                    <div id="PersonalInfos">
-                        <div class="subGroup">
-                            <legend></legend>
+                <form action="index.html" method="post" id="form">
+                    <div class="subGroup" id="PersonalInfos">
+                        <div id="content">
                             <label for="name">Nom</label>
                             <input type="text" id="name" maxlength="20">
+                        </div>
+                        <div id="content">
                             <label for="firstName">Prénom</label>
                             <input type="text" id="firstName" maxlength="20">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" maxlength="35">
                         </div>
                     </div>
+                    <div id="content">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" maxlength="35">
+                    </div>
+
                     <fieldset id="subject" class="subGroup">
                         <legend class="subGroup"></legend>
                         <div>
