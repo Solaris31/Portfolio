@@ -29,10 +29,10 @@
         <img id="logo" src="./Image/Logo.png" alt="Signature du créateur du portfolio">
         <nav id="navBar">
             <ul id="navlink" class="link">
-                <li><a href="#anchor1" class="nav">A propos</a></li>
-                <li><a href="#anchor2" class="nav">Mes services</a></li>
-                <li><a href="#anchor3" class="nav">Mes réalisations</a></li>
-                <li><a href="#anchor4" class="nav">Contact</a></li>
+                <li><a href="#anchor1" class="nav" id="about">A propos</a></li>
+                <li><a href="#anchor2" class="nav" id="services">Mes services</a></li>
+                <li><a href="#anchor3" class="nav" id="realizations">Mes réalisations</a></li>
+                <li><a href="#anchor4" class="nav" id="contact">Contact</a></li>
             </ul>
             <div id="navPlatforms">
                 <i class="fa-brands fa-github"></i>
@@ -77,8 +77,9 @@
         <!-- Section CONTACT -->
         <section id="contact-sec4">
             <article  id="contact-art4">
+                <div id="emailPic"></div>
                 <h2>Contact</h2>
-                <form action="index.html" method="post" id="form">
+                <form action="" method="post" id="form">
                     <div class="subGroup" id="PersonalInfos">
                         <div class="content">
                             <label for="name">Nom</label>
@@ -97,7 +98,7 @@
                     <fieldset id="subject" class="subGroup">
                         <legend class="subGroup"></legend>
                         <div>
-                            <label for="titleSubject" id="titleSubject">Titre</label>
+                            <label for="titleSubject" id="titleSubject">Sujet</label>
                             <input type="text" id="titleSubject">
                         </div>
                         <label for="textSubject"></label>
