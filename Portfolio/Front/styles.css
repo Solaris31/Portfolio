@@ -11,6 +11,7 @@
 a{
     font-family: fantasy;
     font-weight: 100;
+    color: black;
 }
 body{
     position: relative;
@@ -162,6 +163,7 @@ article{
 #about-art1, #services-art2{
     box-shadow: none;
     backdrop-filter: blur(0);
+    padding-top: 5vh;
 }
 h1{
     display: none;
@@ -182,7 +184,7 @@ p{
 
 /*  Formulaire de contact */
 #form{
-    width: 90%;
+    width: 91%;
     margin: 0 auto;
 }
 .subGroup{
@@ -201,10 +203,14 @@ p{
     margin: 1% 0.5% 1%;
 }
 #subject{
-    width: 94%;
+    width: 100%;
     height: 40%;
-    margin: 6% 0 4%;
+    margin: 6% 0 1.5%;
     border-radius: 8px;
+}
+#textSubject{
+    padding: 10px;
+    margin: 5px;
 }
 #buttons{
     display: flex;
@@ -226,7 +232,7 @@ p{
     background-size: contain;
     height: 10vw;
     width: 25vh;
-    left: 46vw;
+    left: 51vw;
     top: 2vh;
 }
 input[type="text"], input[type="email"], textarea{
