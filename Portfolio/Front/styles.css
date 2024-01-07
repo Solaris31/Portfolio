@@ -2,16 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Kanit', sans-serif, Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
 :root{
     --ombreGrise: rgb(98 98 26);
+    --texteGris: rgba(55, 52, 52, 0.9);
 }
-a{
+a, p, h1, h2, h3, i, label{
     font-family: fantasy;
     font-weight: 100;
-    color: black;
+    color: var(--texteGris);
 }
 body{
     position: relative;
@@ -37,11 +38,13 @@ body{
 }
 
 
-/* Limage de fond */
+/* Les images de fond */
 .image{
     position: absolute;
-    background-image: url(./Image/PaysageAasiatiqueAvecMontgolfieres.jpg);
+    background-image: url(./Image/PaysageAasiatiqueAvecMontgolfieres.webp);
     background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
     width: 100%;
     height: 100vh;
 }
@@ -63,9 +66,6 @@ body{
     font-size: 1.3em;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-}
-#ascensor{
-    color:black;
 }
 
 
@@ -97,7 +97,7 @@ body{
     padding-left: 0;
 }
 #navlink a{
-    color: black;
+    /* color: black; */
     text-align: center;
     display: flex;
     padding: 10px;
@@ -106,7 +106,6 @@ body{
 }
 #navlink > li > a:hover{
     transform: scale(110%) skewX(-10deg);
-    border-radius: 2px solid black;
 }
 .nav{
     text-decoration: none;
@@ -152,18 +151,25 @@ section{
 }
 article{
     box-shadow: 9px 6px 20px var(--ombreGrise);
-    margin: 20vh auto;
+    margin: 16vh auto 10vh;
     width: 73vw;
     height: 60vh;
     position: relative;
     z-index: 0;
     border-radius: 8px;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(12px);
 }
 #about-art1, #services-art2{
     box-shadow: none;
+    padding: 11vh 0 0 24vw;
     backdrop-filter: blur(0);
-    padding-top: 5vh;
+}
+#aboutText{
+    width: 21vw;
+}
+#aboutText > p {
+    margin: 0 0 2vh 0vw;
+    color: var(--texteGris);
 }
 h1{
     display: none;
@@ -175,16 +181,15 @@ h2{
     font-size: 100%;
 }
 p{
-    color: black;
-    width: 60%;
-    height: 60%;
-    margin: 8% 0 8% 8vw;
+    font-size: clamp(1.3vw, 2vw, 2.5vw);
+    color: rgb(244, 215, 162) !important;
 }
 
 
 /*  Formulaire de contact */
 #form{
     width: 91%;
+    height: 84%;
     margin: 0 auto;
 }
 .subGroup{
@@ -194,7 +199,7 @@ p{
 #content{
     margin-right: 2%;
 }
-#PersonalInfos{
+#personalInfos{
     display: flex;
     flex-direction: row;
     margin: 6% 0 2%;
@@ -205,7 +210,7 @@ p{
 #subject{
     width: 100%;
     height: 40%;
-    margin: 6% 0 1.5%;
+    margin: 6% 0 2.5%;
     border-radius: 8px;
 }
 #textSubject{
@@ -220,7 +225,7 @@ p{
     width: 56%;
 }
 #email{
-    width: 37.2%;
+    width: 25%;
 }
 #contact-art4{
     position: relative;
@@ -235,15 +240,16 @@ p{
     left: 51vw;
     top: 2vh;
 }
+label{
+    font-size: clamp(0.8vw, 0.9vw, 1vw);
+}
 input[type="text"], input[type="email"], textarea{
     outline: none;
     border-radius: 5px 5px 5px 5px;
 }
 input[type="submit"], input[type="reset"]{
     cursor: pointer;
-    background-color: var(--bleu);
     color: white;
-    border: none;
     border-radius: 4px;
     padding: 10px;
     background-color: orange;
