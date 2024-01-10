@@ -7,13 +7,19 @@
 }
 :root{
     --ombreGrise: rgb(98 98 26);
-    --texteGris: rgba(55, 52, 52, 0.9);
+    --texteRouge: rgb(158 31 31 / 90%);
     --texteOrangePale:  rgb(244, 215, 162);
 }
 a, p, h1, h2, h3, i{
     font-family: fantasy;
     font-weight: 100;
-    color: var(--texteGris);
+    color: var(--texteRouge);
+}
+a{
+    font-size: 1.1em;
+}
+li{
+    list-style-type: none;
 }
 h1{
     display: none;
@@ -25,7 +31,7 @@ h2{
     font-size: 100%;
 }
 #p1, #p2, #p3{
-    font-size: clamp(1.3vw, 2vw, 2.5vw);
+    font-size: clamp(1.3vw, 1.8vw, 2.1vw);
     color: var(--texteOrangePale) !important;
     width: 70vw;
     display: flex;
@@ -207,6 +213,28 @@ article{
 }
 
 
+/* Zone "Mes competences" */
+#competences-art3{
+    box-shadow: none;
+    backdrop-filter: blur(0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* padding-top: 3vh; */
+    height: auto;
+    margin-top: -4vh;
+}
+.containerList{
+    border: 1px dashed black;
+    border-radius: 10px;
+    padding: 1.4vh 1vw;
+}
+#firstCompetences, #secondaryCompetences{
+    position: initial;
+    font-size: 1.3em;
+}
+
+
 /* Zone "Mes réalisations" */
 #realazations-art3{
     padding: 4vh 3vw;
@@ -225,12 +253,6 @@ article{
     margin: auto;
 }
 
-
-/* Zone "Mes competences" */
-#competences-art3{
-    box-shadow: none;
-    backdrop-filter: blur(0);
-}
 
 /* Zone "Contact" */
 #form{
