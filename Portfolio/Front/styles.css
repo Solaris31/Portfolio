@@ -7,16 +7,19 @@
 }
 :root{
     --ombreGrise: rgb(98 98 26);
-    --texteRouge: rgb(158 31 31 / 90%);
-    --texteOrangePale:  rgb(244, 215, 162);
+    --rose: rgb(158 31 31 / 90%);
+    --roseClair: rgb(245 224 231);
 }
-a, p, h1, h2, h3, i{
+p, h1, h2, h3{
     font-family: fantasy;
     font-weight: 100;
-    color: var(--texteRouge);
+    color: black;
 }
-a{
+a, i{
     font-size: 1.1em;
+    color: var(--rose);
+    font-family: fantasy;
+    font-weight: 100;
 }
 li{
     list-style-type: none;
@@ -40,14 +43,16 @@ h2{
 }
 #p4{
     font-size: clamp(0.8vw, 1.2vw, 1.8vw);
-    padding-top: 18vh;
+    padding-top: 8vh;
     color: var(--texteOrangePale) !important;
     display: inline-block;
-    width: 70vw;
+    width: 60vw;
     text-align: end;
     font-family: kanit;
     opacity: 1;
     transition: opacity 0.5s ease;
+    font-weight: 600;
+    margin-left: 10vw !important;
 }
 body{
     position: relative;
@@ -96,7 +101,7 @@ body{
 }
 
 /* Ascenseur montant */
-.fa-arrow-up-short-wide{
+.fa-angles-up{
     position: fixed;
     top: 50vh;
     left: 110vw;
@@ -112,19 +117,18 @@ body{
     z-index: 5;
     top: 0;
     left: 0;
-    height: 6vh;
-    width: calc(100vw - 20px);
+    height: 6.7vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: transparent;
+    background-color: var(--roseClair);
+    margin-bottom: 2vh;
 }
 #logo{
     margin: 60px 32px 18px 15px;
     width: 10vw;
 }
 #navBar{
-    margin: auto 0 auto;
     display: flex;
     align-items: center;
     width: 100%;
@@ -132,6 +136,7 @@ body{
 }
 #navlink{
     padding-left: 0;
+    margin: 1.6vh 0 2vh;
 }
 #navlink a{
     text-align: center;
@@ -167,6 +172,9 @@ body{
 }
 .fa-brands:hover{
     cursor: pointer;
+}
+.fa-github{
+    margin-right: 0.5vw;
 }
 
 
@@ -205,10 +213,9 @@ article{
 }
 #aboutText{
     width: 70vw;
-    padding-top: 10vh; 
 }
 #aboutText > p {
-    margin: 0 0 2vh 0vw;
+    margin: 0 0 1.5vh 0vw;
     color: var(--texteGris);
 }
 
@@ -220,7 +227,6 @@ article{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* padding-top: 3vh; */
     height: auto;
     margin-top: -4vh;
 }
@@ -228,6 +234,9 @@ article{
     border: 1px dashed black;
     border-radius: 10px;
     padding: 1.4vh 1vw;
+}
+.list{
+    font-weight: bolder;
 }
 #firstCompetences, #secondaryCompetences{
     position: initial;
@@ -238,12 +247,15 @@ article{
 /* Zone "Mes réalisations" */
 #realazations-art3{
     padding: 4vh 3vw;
-    overflow-y: hidden;
+}
+#realizations{
+    left: 0vw;
 }
 #containerCards{
     display: flex;
     flex-wrap: wrap;
     height: 47vh;
+    overflow-y: hidden;
 }
 .cards{
     width: 17vw;
@@ -304,8 +316,8 @@ article{
     background-repeat: no-repeat;
     background-size: contain;
     height: 10vw;
-    width: 25vh;
-    left: 42vw;
+    width: 20vh;
+    left: 41vw;
     top: 7vh;
 }
 label{
@@ -325,6 +337,7 @@ input[type="submit"], input[type="reset"]{
     padding: 10px;
     background-color: orange;
     border-radius: 10px 10px 10px 10px;
+    border: none;
 }
 
 
@@ -341,7 +354,7 @@ footer{
     text-align: center;
     margin: 0.2% 0 0;
     width: 100%;
-    color: white;
+    color: var(--rose)
 }
 
 

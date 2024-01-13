@@ -1,4 +1,4 @@
-const ascensor = document.querySelector('.fa-arrow-up-short-wide');
+const ascensor = document.querySelector('.fa-angles-up');
 
 const navAbout = document.querySelector('#about');
 const navServices = document.querySelector('#services');
