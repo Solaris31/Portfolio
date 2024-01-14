@@ -7,17 +7,17 @@
 }
 :root{
     --ombreGrise: rgb(98 98 26);
-    --rose: rgb(158 31 31 / 90%);
-    --roseClair: rgb(245 224 231);
+    --vertSombre: rgb(51 99 68 / 90%);
+    --jaune: rgb(255 207 51) 80%;
 }
 p, h1, h2, h3{
     font-family: fantasy;
     font-weight: 100;
-    color: black;
+    color: var(--vertSombre);
 }
 a, i{
     font-size: 1.1em;
-    color: var(--rose);
+    color: var(--vertSombre);
     font-family: fantasy;
     font-weight: 100;
 }
@@ -35,7 +35,8 @@ h2{
 }
 #p1, #p2, #p3{
     font-size: clamp(1.3vw, 1.8vw, 2.1vw);
-    color: var(--texteOrangePale) !important;
+    /* color: var(--texteOrangePale) !important; */
+    color: var(--vertSombre);
     width: 70vw;
     display: flex;
     flex-direction: column;
@@ -46,13 +47,14 @@ h2{
     padding-top: 8vh;
     color: var(--texteOrangePale) !important;
     display: inline-block;
-    width: 60vw;
+    width: 50vw;
     text-align: end;
     font-family: kanit;
     opacity: 1;
     transition: opacity 0.5s ease;
     font-weight: 600;
-    margin-left: 10vw !important;
+    margin-left: 20vw !important;
+    font-style: italic;
 }
 body{
     position: relative;
@@ -83,7 +85,7 @@ body{
 /* Les images de fond */
 .image{
     position: absolute;
-    background-image: url(./Image/PaysageAasiatiqueAvecMontgolfieres.webp);
+    background-image: url(./Image/PaysageAasiatique.webp);
     background-size: cover;
     background-position: center;
     background-repeat: repeat-y;
@@ -121,8 +123,9 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: var(--roseClair);
+    background-color: var(--jaune);
     margin-bottom: 2vh;
+    background: linear-gradient(180deg, var(--jaune) 70%, transparent 105%);
 }
 #logo{
     margin: 60px 32px 18px 15px;
@@ -146,7 +149,7 @@ body{
     transition: all 0.4s ease-in-out;
 }
 #navlink > li > a:hover{
-    transform: scale(110%) skewX(-10deg);
+    transform: scale(107%) skewX(-10deg);
 }
 .nav{
     text-decoration: none;
@@ -195,7 +198,7 @@ section{
 }
 article{
     box-shadow: 9px 6px 20px var(--ombreGrise);
-    margin: 16vh auto 10vh;
+    margin: 25vh auto 10vh;
     width: 65vw;
     height: 55vh;
     position: relative;
@@ -209,14 +212,14 @@ article{
 #about-art1{
     box-shadow: none;
     backdrop-filter: blur(0);
-    margin: 0 auto;
+    margin: 14vh auto 10vh !important;
 }
 #aboutText{
     width: 70vw;
 }
 #aboutText > p {
     margin: 0 0 1.5vh 0vw;
-    color: var(--texteGris);
+    /* color: var(--texteGris); */
 }
 
 
@@ -354,7 +357,7 @@ footer{
     text-align: center;
     margin: 0.2% 0 0;
     width: 100%;
-    color: var(--rose)
+    color: var(--rougeFonce)
 }
 
 

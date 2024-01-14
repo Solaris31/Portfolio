@@ -9,7 +9,7 @@ const navContact = document.querySelector('#contact');
 // Control de lascenseur
 window.addEventListener('scroll', () => {
     if (scrollY > 600){
-        ascensor.style.left = "96vw";
+        ascensor.style.left = "97vw";
     } else {
         ascensor.style.left = "110vw";
     }
